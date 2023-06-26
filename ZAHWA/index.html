@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahwa</title>
+    <!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <!-- <script src="main.js">
+    </script> -->
+    <style>
+        /* Common styles for all screen sizes */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Marai;
+        }
+        
+        @font-face {
+            font-family: Marai;
+            src: url(/font/Almarai-Regular.ttf);
+        }
+        
+        li {
+            list-style: none;
+            display: inline;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #ffff;
+            font-weight: bold;
+            font-size: 45px;
+        }
+        
+        .nav-container {
+            background-color: #ee8b22ea;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .logo {
+            width: 70px;
+            height: 32px;
+            margin-right: 35px;
+        }
+        
+        .ul-1 {
+            display: flex;
+        }
+        
+        .nav-item {
+            padding-left: 35px;
+        }
+        
+        .nav-link {
+            font-size: 18px;
+            padding-left: 20px;
+        }
+        /* .nav-link:hover {
+    color: #ee5e3e;
+} */
+        /* SECTION 1 */
+        
+        #section-1 {
+            display: flex;
+            background-image: url(/img/web\ 1.png);
+            height: 100vh;
+            background-size: 100% 100%;
+            position: relative;
+            z-index: 1;
+        }
+        
+        #section-1 .slog {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+        /* SECTION 2 */
+        
+        #section-2 {
+            background-image: url(/img/section2.png);
+            min-height: 100vh;
+            background-size: cover;
+            background-size: 100% 100%;
+        }
+        
+        .heading-section-2 {
+            padding-top: 112px;
+            font-size: 50px;
+            text-align: center;
+            color: #ffff;
+        }
+        
+        .para-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .para-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            line-height: 2;
+            color: #ffff;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 30px;
+        }
+        /* SECTION 3 */
+        
+        #section-3 {
+            background-image: url(/img/sec3.png);
+            min-height: 100vh;
+            background-size: cover;
+            background-size: 100% 100%;
+        }
+        
+        .behave-para {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            color: black;
+            padding-top: 100px;
+            padding-bottom: 40px;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .behave-content {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            justify-content: space-evenly;
+            margin-top: 65px;
+        }
+        
+        .behave-icon-cont-1 {
+            cursor: pointer;
+            position: relative;
+            bottom: 35px;
+        }
+        
+        .behave-icon-cont {
+            cursor: pointer;
+        }
+        
+        .behave-icon {
+            width: 267px;
+            height: 300px;
+        }
+        
+        .behave-icon2 {
+            width: 277px;
+            height: 267px;
+            /* padding-top: 55px; */
+            /* margin-top: 55px; */
+        }
+        
+        .behave-icon3 {
+            width: 279px;
+            height: 267px;
+            /* margin-top: 55px; */
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 25px;
+            cursor: pointer;
+        }
+        /* SECTION 4 */
+        
+        #section-4 {
+            background-image: url(../img/tex.png);
+            background-size: cover;
+            background-size: 100% 100%;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        .icon-s-5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 170px;
+        }
+        
+        .icon-s-4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 250px;
+            height: 190px;
+        }
+        
+        .box-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 130px;
+        }
+        
+        .vid-final {
+            width: 800px;
+            height: 455px;
+        }
+        /* SECTION 5 */
+        
+        #section-5 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            gap: 50px;
+            background-image: url(../img/5555.png);
+            background-size: cover;
+            height: 120vh;
+            width: 100%;
+            position: relative;
+        }
+        
+        #section-5 h1 {
+            font-size: 40px;
+            position: absolute;
+            top: 70px;
+            left: 47%;
+        }
+        
+        .para-sec-5 {
+            font-size: 20px;
+            position: absolute;
+            top: 200px;
+            left: 36%;
+        }
+        
+        .icon-sec-five-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 170px;
+        }
+        
+        .icon-sec-five-2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 170px;
+        }
+        
+        .icon-sec-five-3 {
+            position: absolute;
+            top: 70px;
+            left: 43%;
+            width: 250px;
+            height: 160px;
+        }
+        
+        .icon-sec-five-4 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .icon-sec-five-5 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 210px;
+            height: 190px;
+        }
+        
+        .circle:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        
+        .circle {
+            background-color: #ee8b22;
+            border-radius: 200px;
+            height: 220px;
+            width: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .c-para {
+            text-align: center;
+            font-size: 28px;
+            color: #ffff;
+        }
+        
+        .circle-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+        /* FOOTER */
+        
+        .footer-container {
+            display: flex;
+            padding-top: 0px;
+            padding: 30px;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            gap: 900px;
+            color: #ffff;
+            direction: rtl;
+            background-image: url(../img/ff.png);
+            background-position: center;
+            background-size: contain no-repeat;
+            object-fit: contain;
+            height: 25vh;
+            position: relative;
+            width: 100%;
+        }
+        
+        .logo-footer {
+            position: absolute;
+            width: 150px;
+            height: 70px;
+            top: 55px;
+        }
+        
+        .footer-container div h1 {
+            font-size: 28px;
+            padding-bottom: 10px;
+        }
+        
+        .footer-container div p {
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+        
+        @media all and (min-width: 370px) and (max-width: 576px) {
+            /* body {
+            width: 130%;
+        } */
+            #section-1 {
+                display: flex;
+                background-image: url(/img/web\ 1.png);
+                height: 40vh;
+                object-fit: contain;
+                object-position: center;
+                width: 130%;
+            }
+            .nav-container {
+                background-color: #ee8b22ea;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 130%;
+            }
+            .nav-item {
+                padding-left: 0;
+            }
+            .nav-link {
+                font-size: 14px;
+                /* padding-left: 10px; */
+            }
+            #section-2 {
+                background-image: url(/img/section2.png);
+                min-height: 100%;
+                background-size: contain no-repeat;
+                width: 130%;
+            }
+            .heading-section-2 {
+                padding-top: 55px;
+                font-size: 28px;
+            }
+            .para-content {
+                font-size: 18px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 35px;
+            }
+            #section-3 {
+                background-image: url(/img/sec3-resp.png);
+                height: 130%;
+                object-fit: contain;
+                object-position: center;
+                padding: 19px;
+                width: 130%;
+            }
+            .behave-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+            }
+            .behave-para {
+                font-size: 25px;
+                /* padding-top: 90px; */
+                /* padding-bottom: 20px; */
+            }
+            .behave-icon {
+                width: 180px;
+                height: 200px;
+            }
+            .behave-icon2 {
+                width: 200px;
+                height: 180px;
+            }
+            .behave-icon3 {
+                width: 200px;
+                height: 180px;
+            }
+            .behave-icon-cont {
+                padding-bottom: 33px;
+            }
+            #section-4 {
+                background-image: url(../img/tex.png);
+                height: 30%;
+                object-fit: contain;
+                object-position: center;
+                width: 130%;
+            }
+            .icon-s-5 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 120px;
+                height: 90px;
+            }
+            .icon-s-4 {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 120px;
+                height: 120px;
+            }
+            .vid-final {
+                width: 400px;
+                height: 300px;
+            }
+            .box-vid {
+                margin-top: 100px;
+            }
+            .c-para {
+                font-size: 12px;
+            }
+            .cir-header {
+                font-size: 25px;
+                /* margin-bottom: 80px; */
+            }
+            .goals-para {
+                font-size: 18px;
+                /* padding-bottom: 10px; */
+            }
+            #section-5 {
+                height: 100vh;
+                background-image: url(../img/5555.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 130%;
+            }
+            #section-5 h1 {
+                font-size: 40px;
+                position: absolute;
+                top: 40px;
+                left: 41%;
+            }
+            .para-sec-5 {
+                font-size: 20px;
+                position: absolute;
+                top: 130px;
+                left: 6%;
+            }
+            .icon-sec-five-1 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 130px;
+                height: 130px;
+            }
+            .icon-sec-five-2 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 160px;
+                height: 130px;
+            }
+            .icon-sec-five-3 {
+                position: absolute;
+                top: 30px;
+                left: 34%;
+                width: 200px;
+                height: 140px;
+            }
+            .icon-sec-five-4 {
+                position: absolute;
+                bottom: 60px;
+                right: 0;
+                width: 130px;
+                height: 130px;
+            }
+            .icon-sec-five-5 {
+                position: absolute;
+                bottom: 60px;
+                left: 0;
+                width: 130px;
+                height: 130px;
+            }
+            .circle-container {
+                display: flex;
+                flex-direction: column;
+                /* justify-content: center; */
+                align-items: center;
+                margin-top: 45px;
+            }
+            .cir-content-1 {
+                display: flex;
+                justify-content: center;
+                flex-direction: row-reverse;
+                padding-bottom: 15px;
+                gap: 20px;
+            }
+            .circle {
+                height: 80px;
+                width: 80px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+            .footer-container {
+                /* padding: 10px; */
+                padding-top: 25px;
+                /* padding-top: 20px;
+        padding-right: 30px; */
+                display: flex;
+                gap: 300px;
+                flex-direction: row-reverse;
+                justify-content: space-around;
+                color: #ffff;
+                direction: rtl;
+                background-image: url(../img/ff.png);
+                background-position: center;
+                background-size: contain no-repeat;
+                object-fit: contain;
+                height: 20vh;
+                position: relative;
+                width: 130%;
+            }
+            .logo-footer {
+                position: absolute;
+                width: 120px;
+                height: 50px;
+                top: 45px;
+            }
+            .footer-container div h1 {
+                font-size: 22px;
+                padding-bottom: 10px;
+            }
+            .footer-container div p {
+                font-size: 16px;
+                padding-bottom: 5px;
+            }
+        }
+    </style>
+
+    <script>
+        function show_hide() {
+            x = document.getElementById("cont-1");
+            x.innerHTML = " <br> <p>سلوك بيأذي لفرلد المجتمع و بيصعب <br>الوصول لاي حد بيقوم بعمل ضد القانون </p>";
+        }
+
+        function show_hide_two() {
+            x = document.getElementById("cont-2");
+            x.innerHTML = " <br><p>منظر مش حضاري بيسئ لبلدنا<br> و شكلها خصوصًا لو اثار</p>";
+        }
+
+        function show_hide_three() {
+            x = document.getElementById("cont-3");
+            x.innerHTML = "<br><p>سلوك بيظهر ان مجتمعنا مش نضيف<br> ولازم نصححه لكل الفئات العمرية</p> ";
+        }
+
+        function show_hide_goal_one() {
+            x = document.getElementById("goals-1");
+            x.innerHTML = "<br><p style='direction: rtl; text-align:center;'> التحفيز علي مشاركة المجتمعات <br> المحلية في جهود الحفاظ علي <br> الممتلكات العامة و المرافق العامة. </p> ";
+        }
+
+        function show_hide_goal_two() {
+            x = document.getElementById("goals-2");
+            x.innerHTML = "<br> <p style='direction: rtl; text-align:center;'> تصحيح سلوك تخريب الممتلكات <br> العامة و المرافق العامة بين <br> فئات المجتمع و ضمان استمراريت <br> السلوك الجيد.</p> ";
+        }
+
+        function show_hide_goal_three() {
+            x = document.getElementById("goals-3");
+            x.innerHTML = "<br> <p style='direction: rtl; text-align:center;'> التعوية بأهمية الممتلكات العامة<br> و المرافق العامة و تعزيز الوعي <br> بضرورةالحفاظ عليها و العمل علي <br> مدي الحياة للحفاظ عليها.</p> ";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div>
+                    <a href="zahwa.html"><img src="/img/logo.png" alt="logo" class="logo"></a>
+                </div>
+
+                <div>
+
+                    <ul class="ul-1">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer-1" dir="rtl" lang="ar">
+                                اتصل بنا
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class=" nav-link activ" href="#section-5">
+                                اهدفنا
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-2" dir="rtl" lang="ar">
+                                اعرفنا
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="section-1">
+        <img src="/img/slogan.png" alt="slogan" class="slog">
+    </section>
+    <section id="section-2">
+        <div class="para-cont">
+            <h1 class="heading-section-2">احنا زهو</h1>
+            <br>
+            <p class="para-content">
+                مبادرة زهو هي مبادرة تسعى للحد من تخريب و تشويه الممتلكات العامة بدأ المبادرة في يناير ٢٠٢٣ و هدفها الاساسي انها تمحي سلوك التشوية و التخريب في بلدنا عشان كدة قررنا نقرب من الشباب بطرق جديدة لان هم البداية لاي تجديد و الحفاظ على ممتلكات بلدك خُلق لازم
+                كلنا نتبعه عشان نظهر ديماً بصورة متحضرة و بخُلق زاهـي
+            </p>
+        </div>
+    </section>
+    <section id="section-3">
+        <div class="behavior-cont">
+            <p class="behave-para">سلوكيات بنسعي لتصحيحها</p>
+        </div>
+        <div class="behave-content">
+            <div class="behave-icon-cont-1 on-click-img">
+                <img src="/img/radar-01.svg" alt="" class="behave-icon" onclick="show_hide()">
+                <div class=" content" id="cont-1">
+                    <h1 class="heading-icon">كسر الممتلكات العامة</h1>
+                    <!-- <p>سلوك بيأذي لفرلد المجتمع و بيصعب <br>الوصول لاي حد بيقوم بعمل ضد القانون </p> -->
+                </div>
+            </div>
+            <div class="behave-icon-cont on-click-img">
+                <img src="/img/vandalism-01.svg" alt="" class="behave-icon2" onclick="show_hide_two()">
+                <div class=" content" id="cont-2">
+                    <h1> الرسم علي الممتلكات العامة</h1>
+                    <!-- <br>
+                        <p>منظر مش حضاري بيسئ لبلدنا<br> و شكلها خصوصًا لو اثار</p> -->
+                </div>
+            </div>
+            <div class="behave-icon-cont on-click-img">
+                <img src="/img/trash.png" alt="" class="behave-icon3" onclick="show_hide_three()">
+                <div class=" content" id="cont-3">
+                    <h1 class="heading-icon">رمي المخلفات في الشارع</h1>
+                    <!-- <br>
+                        <p>سلوك بيظهر ان مجتمعنا مش نضيف<br> ولازم نصححه لكل الفئات العمرية</p> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="section-4">
+        <img src="./img/!!.png" class="icon-s-5">
+        <div class="box-container">
+            <div class="box-vid">
+                <video controls class="vid-final">
+                    <source src="./video/zahwa-vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <img src="./img/kit.png" class="icon-s-4">
+    </section>
+    <section id="section-5">
+        <h1>أهدافنا </h1>
+        <p class="para-sec-5">تتمثل اهدافنا الحفاظ علي هذه الممتلكات و <br> لالمرافق العامة و التأكد من عدم تعرضها للتخريب أو الضرر</p>
+
+
+
+
+        <div class="circle-container">
+            <div class="cir-content-1">
+                <div class="circle" id="" onclick="show_hide_goal_one()">
+                    <p class="c-para">رقم ١</p>
+                </div>
+                <div id="goals-1">
+                </div>
+            </div>
+            <div class="cir-content-1">
+                <div class="circle" id="" onclick="show_hide_goal_two()">
+                    <p class="c-para">رقم ٢</p>
+                </div>
+                <div id="goals-2">
+                </div>
+            </div>
+            <div class="cir-content-1">
+                <div class="circle" id="" onclick="show_hide_goal_three()">
+                    <p class="c-para">رقم ٣</p>
+                </div>
+                <div id="goals-3">
+                </div>
+            </div>
+        </div>
+
+
+        <img src="img/electric buzz.png" class="icon-sec-five-1">
+        <img src="img/kit.png" class="icon-sec-five-2">
+        <img src="img/lines.png" class="icon-sec-five-3">
+        <img src="img/medal.png" class="icon-sec-five-4">
+        <img src="img/spray.png" class="icon-sec-five-5">
+
+
+    </section>
+    <footer class="footer-container" id="footer-1">
+        <div>
+            <h1> تواصل معنا </h1>
+            <p>٠١١٤٤٤٧٧٧٨٨</p>
+            <!-- <p class="parafoot">زهراء المعادي, برج <br>١١, اشجار دارنا</p> -->
+            <p>zahuegypt@gmail.com</p>
+        </div>
+        <div>
+            <img src="/img/logo.png" class="logo-footer">
+        </div>
+    </footer>
+</body>
+
+</html>
